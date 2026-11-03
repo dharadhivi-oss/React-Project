@@ -1,0 +1,79 @@
+
+.add-event-section {
+  margin-top: 35px;
+  padding: 24px;
+  background: white;
+  border: 1px solid #e5eaf0;
+  border-radius: 10px;
+}
+
+.add-event-section h3 {
+  color: #263653;
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.add-event-section > p {
+  color: #7a8494;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.add-event-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.add-event-grid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+
+.add-event-grid label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #364152;
+}
+
+.add-event-grid input,
+.add-event-grid select,
+.add-event-grid textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px;
+  border: 1px solid #dce1e9;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: inherit;
+}
+
+.add-event-full {
+  grid-column: 1 / -1;
+}
+
+.add-event-btn {
+  margin-top: 18px;
+  padding: 11px 18px;
+  background: #1260db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-event-btn:hover {
+  background: #084bb5;
+}
+
+@media (max-width: 600px) {
+  .add-event-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .add-event-full {
+    grid-column: auto;
+  }
+}

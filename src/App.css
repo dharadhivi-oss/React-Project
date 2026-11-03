@@ -1,0 +1,151 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+  color: #263653;
+}
+
+.website {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Navbar */
+
+.navbar {
+  width: 100%;
+  min-height: 70px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6%;
+  border-bottom: 1px solid #e5eaf0;
+}
+
+.logo {
+  color: #174b91;
+  font-size: 21px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #475569;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: #1260db;
+}
+
+.favorites-count {
+  color: #e11d48;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.nav-heart {
+  margin-right: 4px;
+}
+
+/* Homepage hero */
+
+.hero {
+  min-height: 390px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  background: #f1f6ff;
+}
+
+.tagline {
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #526b96;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: 38px;
+  line-height: 1.3;
+  color: #263653;
+}
+
+.hero h1 span {
+  color: #4169c9;
+}
+
+.description {
+  margin-top: 15px;
+  max-width: 500px;
+  color: #718096;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Footer */
+
+.footer {
+  background: #172b4d;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+  margin-top: 30px;
+}
+
+.footer h3 {
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 12px;
+  margin-top: 7px;
+  color: #d1d9e6;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 18px 12px;
+  }
+
+  .nav-links {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links a,
+  .favorites-count {
+    font-size: 12px;
+  }
+
+  .hero h1 {
+    font-size: 29px;
+  }
+}

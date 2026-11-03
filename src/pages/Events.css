@@ -1,0 +1,174 @@
+
+.events-section {
+  padding: 45px 6%;
+  background: #f8fafc;
+  min-height: 500px;
+}
+
+.section-heading {
+  margin-bottom: 30px;
+}
+
+.section-label {
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.section-heading h1 {
+  font-size: 28px;
+  color: #263653;
+  margin: 8px 0;
+}
+
+.section-heading p {
+  color: #7a8494;
+  font-size: 13px;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  align-items: start;
+}
+
+.event-card {
+  display: flex;
+  background: white;
+  border: 1px solid #e5eaf0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.event-category {
+  width: 105px;
+  min-height: 210px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: #1260db;
+  overflow-wrap: anywhere;
+  padding: 10px;
+}
+
+.event-category.culture {
+  background: #1260db;
+}
+
+.event-category.sports {
+  background: #2563eb;
+}
+
+.event-category.design {
+  background: #1d4ed8;
+}
+
+.event-category.tech {
+  background: #4338ca;
+}
+
+.event-details {
+  flex: 1;
+  min-width: 0;
+  padding: 18px;
+}
+
+.event-details h3 {
+  color: #263653;
+  font-size: 17px;
+  margin: 5px 0 12px;
+}
+
+.event-details > p {
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.event-info {
+  margin: 7px 0;
+}
+
+.event-actions,
+.manage-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.event-actions button,
+.manage-actions button {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.register-btn {
+  background: #1260db;
+  color: white;
+}
+
+.favorite-btn {
+  background: #fff7ed;
+  color: #d97706;
+  border: 1px solid #fed7aa !important;
+}
+
+.favorite-btn:hover {
+  background: #ffedd5;
+}
+
+.favorite-btn.favorited {
+  background: #fff1f2;
+  color: #e11d48;
+  border-color: #fecdd3 !important;
+}
+
+.edit-btn {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.delete-btn {
+  background: #fff1f2;
+  color: #e11d48;
+}
+
+.event-details input,
+.event-details textarea {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 9px;
+  border: 1px solid #dce1e9;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 750px) {
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .event-card {
+    flex-direction: column;
+  }
+
+  .event-category {
+    width: 100%;
+    min-height: 55px;
+  }
+}

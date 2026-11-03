@@ -1,0 +1,124 @@
+
+.registration-section {
+  margin: 40px auto;
+  width: 88%;
+  padding: 25px;
+  background: white;
+  border: 1px solid #e5eaf0;
+  border-radius: 10px;
+  color: #263653;
+}
+
+.registration-section h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.registration-section > p {
+  color: #7a8494;
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+
+.registration-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.registration-grid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+
+.registration-grid label,
+.attendance-field legend {
+  font-size: 13px;
+  font-weight: 600;
+  color: #364152;
+}
+
+.registration-grid input:not([type="checkbox"]):not([type="radio"]),
+.registration-grid select,
+.registration-grid textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px;
+  border: 1px solid #dce1e9;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: inherit;
+}
+
+.registration-grid small {
+  color: #7a8494;
+  font-size: 11px;
+}
+
+.registration-full {
+  grid-column: 1 / -1;
+}
+
+.attendance-field {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.attendance-field label,
+.check-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: normal !important;
+  font-size: 12px !important;
+}
+
+.attendance-field input,
+.check-label input {
+  accent-color: #1260db;
+}
+
+.registration-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.registration-actions button {
+  padding: 11px 16px;
+  border: none;
+  border-radius: 5px;
+  background: #1260db;
+  color: white;
+  cursor: pointer;
+}
+
+.registration-actions button + button {
+  background: #edf0f4;
+  color: #344054;
+}
+
+.registration-success {
+  color: #247b46;
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .registration-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .registration-full {
+    grid-column: auto;
+  }
+
+  .registration-section {
+    width: 90%;
+    padding: 16px;
+  }
+}
